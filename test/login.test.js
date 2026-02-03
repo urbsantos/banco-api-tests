@@ -1,8 +1,7 @@
-const { describe } = require("mocha");
 const request = require("supertest");
 const { expect } = require("chai");
 
-describe('', () => {
+describe('Login', () => {
     describe('POST /login', () => {
         it('Deve retornar 200 com token em string quando usar credencias validas', async() => {
             const resposta = await request('http://localhost:3000')
